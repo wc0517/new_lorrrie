@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>The First Love Letter to Lorrie | Lorrie and Woody</title>
+<title>The First Love Letter to Lorrie | Home</title>
 <meta name="keywords" content="">
 <meta name="description" content="Dear Lorrie,
 &quot;Just another boring night, nothing special will happen.&quot; I said to myself. I looked up at the sky, couldn’t see any stars. I clicked the confirm button and sent my request to you. Then everything started to change.
@@ -27,34 +27,6 @@ As the wind blew, I saw something bright was hidden behind the clouds. It shines
         #theme-toggle,
         .top-link {
             display: none;
-        }
-
-    </style>
-    <style>
-        @media (prefers-color-scheme: dark) {
-            :root {
-                --theme: rgb(29, 30, 32);
-                --entry: rgb(46, 46, 51);
-                --primary: rgb(218, 218, 219);
-                --secondary: rgb(155, 156, 157);
-                --tertiary: rgb(65, 66, 68);
-                --content: rgb(196, 196, 197);
-                --hljs-bg: rgb(46, 46, 51);
-                --code-bg: rgb(55, 56, 62);
-                --border: rgb(51, 51, 51);
-            }
-
-            .list {
-                background: var(--theme);
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-track {
-                background: 0 0;
-            }
-
-            .list:not(.dark)::-webkit-scrollbar-thumb {
-                border-color: var(--theme);
-            }
         }
 
     </style>
@@ -115,7 +87,7 @@ As the wind blew, I saw something bright was hidden behind the clouds. It shines
   },
   "publisher": {
     "@type": "Organization",
-    "name": "Lorrie and Woody",
+    "name": "Home",
     "logo": {
       "@type": "ImageObject",
       "url": "https://lorrrie.com/favicon.ico"
@@ -126,42 +98,12 @@ As the wind blew, I saw something bright was hidden behind the clouds. It shines
 </head>
 
 <body class="" id="top">
-<script>
-    if (localStorage.getItem("pref-theme") === "dark") {
-        document.body.classList.add('dark');
-    } else if (localStorage.getItem("pref-theme") === "light") {
-        document.body.classList.remove('dark')
-    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        document.body.classList.add('dark');
-    }
-
-</script>
 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://lorrrie.com/" accesskey="h" title="Lorrie and Woody (Alt + H)">Lorrie and Woody</a>
+            <a href="https://lorrrie.com/" accesskey="h" title="Home (Alt + H)">Home</a>
             <div class="logo-switches">
-                <button id="theme-toggle" accesskey="t" title="(Alt + T)">
-                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                    </svg>
-                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <circle cx="12" cy="12" r="5"></circle>
-                        <line x1="12" y1="1" x2="12" y2="3"></line>
-                        <line x1="12" y1="21" x2="12" y2="23"></line>
-                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                        <line x1="1" y1="12" x2="3" y2="12"></line>
-                        <line x1="21" y1="12" x2="23" y2="12"></line>
-                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                    </svg>
-                </button>
             </div>
         </div>
         <ul id="menu">
@@ -180,6 +122,7 @@ As the wind blew, I saw something bright was hidden behind the clouds. It shines
 
 </div>
   </header> 
+
   <div class="post-content"><p>Dear Lorrie,</p>
 <p>&quot;Just another boring night, nothing special will happen.&quot; I said to myself. I looked up at the sky, couldn’t see any stars. I clicked the confirm button and sent my request to you. Then everything started to change.</p>
 <p>As the wind blew, I saw something bright was hidden behind the clouds. It shines a shaft of light on me. I was there, standing still, staring at it. People nearby walked in and walked out, no one noticed it. Just like it only shines on me. My own light.</p>
@@ -210,7 +153,7 @@ As the wind blew, I saw something bright was hidden behind the clouds. It shines
     </main>
     
 <footer class="footer">
-    <span>&copy; 2022 <a href="https://lorrrie.com/">Lorrie and Woody</a></span>
+    <span>&copy; 2022 <a href="https://lorrrie.com/">Home</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
@@ -266,16 +209,51 @@ As the wind blew, I saw something bright was hidden behind the clouds. It shines
 
 </script>
 <script>
-    document.getElementById("theme-toggle").addEventListener("click", () => {
-        if (document.body.className.includes("dark")) {
-            document.body.classList.remove('dark');
-            localStorage.setItem("pref-theme", 'light');
-        } else {
-            document.body.classList.add('dark');
-            localStorage.setItem("pref-theme", 'dark');
-        }
-    })
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
 
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
 </script>
 </body>
 
